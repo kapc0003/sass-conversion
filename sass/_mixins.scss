@@ -1,0 +1,39 @@
+@mixin columns( $num_of_cols, $gutter, $width:100%  ){
+  width: ( $width - ( $gutter * ($num_of_cols - 1) ) ) / $num_of_cols;
+  margin-left: $gutter;
+  &:first-child{
+    margin-left: 0;
+  }
+}
+%clearfix {
+    &:after {
+        display: table;
+        clear: both;
+        content: '';
+    }
+}
+@mixin width600 {
+    width: 600px;
+    margin: $defaultMargin;
+}
+@mixin width700 {
+    width: 700px;
+    margin: $defaultMargin;
+}
+@mixin width900 {
+    width: 900px;
+    margin: $defaultMargin;
+}
+@mixin width1400 {
+    width: 1400px;
+    margin: $defaultMargin;
+}
+@mixin usedColors ($BG_color, $color) {
+    background-color: $BG_color;
+    color: $color;
+}
+@mixin pageDefault ($fontSize, $lineHeight) {
+    font-size: $fontSize;
+    line-height: $lineHeight;
+}
+

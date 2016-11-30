@@ -1,0 +1,18 @@
+
+@mixin media700px {
+  @media all and(min-width:701px) and(max-width:900px) {
+        @content;
+    }
+}
+
+@mixin media901px {
+  @media all and(min-width:901px) and(max-width: 1400px) {
+        @content;
+    }
+}
+
+@mixin media1401px {
+@media all and(min-width:1401px) {
+        @content;
+    }
+}
